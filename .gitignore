@@ -38,3 +38,6 @@ jspm_packages
 
 # vue src
 ./fe/*
+
+# IDE
+.idea/*

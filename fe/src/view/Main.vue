@@ -23,7 +23,8 @@ export default {
         return {
             nav: [
                 {text: '关于我', active: false, url: 'javascript:void(0)'},
-                {text: 'ES6', active: false, url: 'http://es6.imsyu.com'}
+                {text: 'ES6', active: false, url: 'http://es6.imsyu.com'},
+                {text: 'Vux', active: false, url: '/#!/vux'}
             ],
             infoShow: false
         }
