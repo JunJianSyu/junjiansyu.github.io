@@ -2,7 +2,7 @@
     <div class="container">
         <ul class="footer-nav">
             <li v-for="(index, item) in nav">
-                <a target="blank" href="{{item.url}}" :class="{'active': item.active}" @click.stop="choose(index)">{{item.text}}</a>
+                <a href="{{item.url}}" :class="{'active': item.active}" @click.stop="choose(index)">{{item.text}}</a>
             </li>
         </ul>
         <div class="item my-wrap" v-if="infoShow" transition="liter">
@@ -22,9 +22,10 @@ export default {
     data() {
         return {
             nav: [
-                {text: '关于我', active: false, url: 'javascript:void(0)'},
+                {text: 'About Me', active: false, url: 'javascript:void(0)'},
                 {text: 'ES6', active: false, url: 'http://es6.imsyu.com'},
-                {text: 'Vux', active: false, url: '/#!/vux'}
+                {text: 'FE Record', active: false, url: '/#!/record'}
+                // {text: 'Vux', active: false, url: '/#!/vux'}
             ],
             infoShow: false
         }

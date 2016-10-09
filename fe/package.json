@@ -6,17 +6,19 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js",
+    "build": "node build/markdown.js && node build/build.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "mark": "node build/markdown.js"
   },
   "dependencies": {
     "array-find": "^1.0.0",
     "array-map": "0.0.0",
     "babel-runtime": "^6.0.0",
     "less-loader": "^2.2.3",
+    "marked": "^0.3.6",
     "validator": "^5.6.0",
     "vue": "^1.0.21",
     "vue-router": "^0.7.13",
