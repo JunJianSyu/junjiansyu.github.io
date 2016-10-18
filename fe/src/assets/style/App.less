@@ -352,4 +352,43 @@ table th {
   p, h1, h2, h3, h4, h5, h6, pre, div {
       margin: 5px 0;
   }
+  blockquote {
+    padding: 0 10px;
+    color: #777;
+    border-left: 3px solid #ddd;
+  }
+  h4 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  h5 {
+    padding: 0 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    position: relative;
+  }
+  h5:before {
+    content: "§";
+    position: absolute;
+    left: -3px;
+    top: -1px;
+  }
+  ul {
+    display: block;
+    list-style: none;
+    padding: 0 10px;
+    overflow: hidden;
+    li {
+      width: 20%;
+      height: 30px;
+      line-height: 30px;
+      float: left;
+      a {
+        color: #333;
+      }
+      a:hover {
+        color: #666;
+      }
+    }
+  }
 }

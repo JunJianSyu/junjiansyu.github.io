@@ -18,7 +18,7 @@ fs.readdir(myPath, function (err, files) {
                 if (err) throw err
                 // write file
                 var _fileName = item.split('.')[0]
-                var Json_str = `var content = "${file.toString().replace(/\n/g, '\\n')}"\nmodule.exports = {content: content}\n`
+                var Json_str = `var content = '${file.toString().replace(/\n/g, '\\n')}'\nmodule.exports = {content: content}\n`
                 fs.exists(myPath + '/' + _fileName + '.js', function (exists) {
                     if (exists) {
                         fs.unlinkSync(myPath + '/' + _fileName + '.js', function (err) {
