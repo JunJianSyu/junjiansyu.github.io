@@ -24,7 +24,8 @@ export default {
             nav: [
                 {text: 'About Me', active: false, url: 'javascript:void(0)'},
                 {text: 'ES6', active: false, url: 'http://es6.imsyu.com'},
-                {text: 'FE Record', active: false, url: '/#!/record'}
+                {text: 'Docs', actve: false, url: 'http://docs.imsyu.com'}
+                // {text: 'FE Record', active: false, url: '/#!/record'}
                 // {text: 'Vux', active: false, url: '/#!/vux'}
             ],
             infoShow: false
